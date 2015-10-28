@@ -7,6 +7,9 @@ public class Employee {
 	private double salary;
 	private String name;
 	private Date hireDay ;
+	protected static final int RECORD_SIZE = 100;
+	protected static final int NAME_SIZE = 40;
+
 	public double getSalary() {
 		return salary;
 	}
@@ -43,5 +46,7 @@ public class Employee {
 		return "Employee [工资=" + salary + ", 姓名=" + name + ", 雇佣日期="
 				+ hireDay + "]";
 	}
-	
+	public Employee(){
+		
+	}
 }
